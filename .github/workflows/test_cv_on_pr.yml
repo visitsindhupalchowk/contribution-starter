@@ -1,0 +1,40 @@
+name: Test CV on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # Replace with actual requirements file if needed
+      
+    - name: Run test
+      run: |
+        python -m unittest tests/test_cv.py
+        # Store the exit code in a variable
+        exit_code=$?
+        # Print the exit code for debugging
+        echo "Test exit code: $exit_code"
+        # If the exit code is non-zero, the test failed
+        if [ $exit_code -ne 0 ]; then
+          exit 1
+        fi
+
+    - name: Merge pull request
+      if: ${{ success() }}
+      uses: pullreminders/merge-action@v5
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

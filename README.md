@@ -11,7 +11,7 @@ The purpose of Contribution Starter is to guide individuals who are just startin
 Contribution Starter helps beginners by:
 
 - Providing clear instructions on how to get started with Git and GitHub.
-- Offering guidance on adding their CV as a README file to personalize their contributions.
+- Offering guidance on adding their [CV](docs/CV_GUIDLINE.md) as a README file to personalize their contributions.
 - Encouraging contributions to documentation, issue resolution, and pull requests to build practical skills.
 - Offering opportunities for beginners to progress to more complex projects and gain confidence in their abilities.
 
@@ -37,7 +37,8 @@ contribution-starter/
     ├── LICENSE
     ├── README.md
     ├── docs/
-    │    └── CONTRIBUTING.md
+    |    ├── CONTRIBUTING.md
+    │    └── CV_GUIDELINE.md
     ├── cv/
     |    ├── YourGitHubUsername1.md
     |    └── YourGitHubUsername2.md
@@ -46,6 +47,8 @@ contribution-starter/
          |       ├── bug-report.yaml
          |       ├── custom-template.yaml
          |       └── feature-request.yaml
+         ├── workflows/
+         |       └── test_cv_on_pr.yml
          └── PULL_REQUEST_TEMPLATE.md
             
 ```
