@@ -46,18 +46,18 @@ After pushing your changes to your forked repository, submit a pull request (PR)
 3. Select your forked repository and the branch containing your changes.
 4. Provide a clear and concise description of your changes in the PR description.
 5. Review the checklist below and ensure all items are completed:
- - [] The PR addresses an existing issue or has been discussed and approved.
- - [] The code follows the project's coding standards and conventions.
- - [] Tests (if applicable) have been added or updated to ensure the changes work as expected.
+    * [ ] The PR addresses an existing issue or has been discussed and approved.
+    * [ ] The code follows the project's coding standards and conventions.
+    * [ ] Tests (if applicable) have been added or updated to ensure the changes work as expected.
 6. Click on the "Create Pull Request" button to submit your PR.
 
 ## Checklist
 
 Please remember to do the following:
 
-- [] Content must be in English
-- [] Ensure your report is new by checking the issue repository
-- [] Simplify code around the issue to isolate the problem
+* [ ] Content must be in English
+* [ ] Ensure your report is new by checking the issue repository
+* [ ] Simplify code around the issue to isolate the problem
 
 
 ## Thank You
