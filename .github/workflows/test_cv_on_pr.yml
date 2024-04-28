@@ -32,9 +32,3 @@ jobs:
         if [ $exit_code -ne 0 ]; then
           exit 1
         fi
-
-    - name: Merge pull request
-      if: ${{ success() }}
-      uses: contribution-starter/merge-action@v5
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
