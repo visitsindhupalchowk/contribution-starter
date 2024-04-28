@@ -35,6 +35,6 @@ jobs:
 
     - name: Merge pull request
       if: ${{ success() }}
-      uses: pullreminders/merge-action@v5
+      uses: contribution-starter/merge-action@v5
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
