@@ -29,29 +29,69 @@ Whether you're a student, self-learner, or career changer, Contribution Starter 
 
 For contribution, please refer to our [Contribution Guidelines](docs/CONTRIBUTING.md)
 
-## Project Structure
+## Project Structure and Purpose
 
 The structure of the project is as follows:
 ```
 contribution-starter/
-    ├── LICENSE
-    ├── README.md
-    ├── docs/
-    |    ├── CONTRIBUTING.md
-    │    └── CV_GUIDELINE.md
+    ├── .github
+    |    ├── ISSUE_TEMPLATE/
+    |    |       ├── bug-report.yaml
+    |    |       ├── config.yaml
+    |    |       ├── custom-issue.yaml
+    |    |       ├── docs.yaml
+    |    |       └── feature-request.yaml
+    |    ├── workflows/
+    |    |       ├── properties/
+    |    |       ├── greetings.yaml
+    |    |       ├── lint.yaml
+    |    |       └── test_cv_on_pr.yml
+    |    └── PULL_REQUEST_TEMPLATE.md
     ├── cv/
     |    ├── YourGitHubUsername1.md
     |    └── YourGitHubUsername2.md
-    └── .github/
-         ├── ISSUE_TEMPLATE/
-         |       ├── bug-report.yaml
-         |       ├── custom-template.yaml
-         |       └── feature-request.yaml
-         ├── workflows/
-         |       └── test_cv_on_pr.yml
-         └── PULL_REQUEST_TEMPLATE.md
-            
+    ├── docs/
+    |    ├── CONTRIBUTING.md
+    │    └── CV_GUIDELINE.md
+    ├── tests/
+    │    └── test_cv.py
+    ├── .editorconfig
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── LICENSE
+    ├── README.md
+    ├── requirements.txt
+    └── ruff.toml     
 ```
----
+The purpose of the files is as follows:
+- **contribution-starter/**
+  - **.github/**
+    - **ISSUE_TEMPLATE/**
+      - `bug-report.yaml`: Template for reporting bugs.
+      - `config.yaml`: Configuration for issue templates.
+      - `custom-issue.yaml`: Template for custom issues.
+      - `docs.yaml`: Template for documentation-related issues.
+      - `feature-request.yaml`: Template for requesting new features.
+    - **workflows/**
+      - **properties/**: (Assumed) Directory for storing workflow property files.
+      - `greetings.yaml`: GitHub Actions workflow for greeting new contributors.
+      - `lint.yaml`: GitHub Actions workflow for linting code.
+      - `test_cv_on_pr.yml`: GitHub Actions workflow for testing CV submissions on pull requests.
+    - `PULL_REQUEST_TEMPLATE.md`: Template for pull requests.
+  - **cv/**
+    - `YourGitHubUsername1.md`: Example CV file for the first user.
+    - `YourGitHubUsername2.md`: Example CV file for the second user.
+  - **docs/**
+    - `CONTRIBUTING.md`: Guidelines for contributing to the project.
+    - `CV_GUIDELINE.md`: Guidelines for creating and submitting CVs.
+  - **tests/**
+    - `test_cv.py`: Tests for the CV submission functionality.
+  - `.editorconfig`: Configuration for consistent coding styles between different editors.
+  - `.gitignore`: Specifies files and directories to ignore in the repository.
+  - `.pre-commit-config.yaml`: Configuration for pre-commit hooks.
+  - `LICENSE`: License for the project.
+  - `README.md`: Overview and instructions for the project.
+  - `requirements.txt`: List of dependencies for the project.
+  - `ruff.toml`: Configuration for the Ruff linter.
 
 Ready to start your journey? Fork this repository and let's get started!
