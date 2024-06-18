@@ -108,3 +108,4 @@ result
 results
 outputs
 /.ruff_cache
+/tests/__pycache__

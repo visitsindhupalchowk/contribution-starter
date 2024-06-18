@@ -1,6 +1,6 @@
 # CV Writing Guidelines For This Project
 
-When creating your CV, feel free to customize it according to your liking, but ensure that you include the above-mentioned sections with the specified format:
+When creating your CV, feel free to customize it according to your liking, but ensure that you include the below-mentioned sections with the specified format:
 
 1. **Personal Details:**  
    Use the format `# Personal Details`.
